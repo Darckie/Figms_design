@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma_Design</title>
+  </head>
+  <link href="index.css" rel="stylesheet" />
+  <body>
+    <!-- --------Navbar---------- -->
+    <div class="navbar">
+      <h3 style="color: beige; font-weight: 700">Startup_3</h3>
+
+      <ul>
+        <li><a class="active" href="#">Overview</a></li>
+        <li><a href="/price.html">Prices</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+        <li><a class="imp btn"> Purchase</a></li>
+      </ul>
+    </div>
+
+    <!------------- The main container -------------- -->
+    <div class="container">
+      <!-- left section -->
+
+      <div id="left">
+        <h1>Lorem ipsum Suscipit, asperiores!</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+          natus. Quo provident ducimus aut perferendis impedit debitis facilis.
+          Animi suscipit veritatis consectetur iusto vitae! Necessitatibus
+          repellat facilis quaerat distinctio fuga.
+        </p>
+        <button class="btnx btn">Learn More</button>
+      </div>
+
+      <!-- right section  -->
+
+      <form id="form">
+        <h2>Sign Up Now</h2>
+        <input type="text" id="email" placeholder="Your Email" required />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Your Password"
+          required
+        />
+        <div>
+          <input type="checkbox" id="checkbox" /><span
+            >I agree to the Terms of Service</span
+          >
+        </div>
+        <button class="btn">Sign In</button>
+        <span>Or</span>
+        <button class="btn">Login via Twitter</button>
+        <span>Do you have an Account? <a href="#">Sign In</a></span>
+      </form>
+    </div>
+
+    <script>
+      const btn_function = function () {
+        setTimeout(() => {
+          alert("The site is under construction, please be patient.");
+        });
+      };
+
+      const signInButtons = document.querySelectorAll(".btn");
+
+      signInButtons.forEach((button) => {
+        button.addEventListener("click", btn_function);
+      });
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
